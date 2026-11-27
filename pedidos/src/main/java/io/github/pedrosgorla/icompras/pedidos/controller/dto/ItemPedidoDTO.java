@@ -1,4 +1,6 @@
 package io.github.pedrosgorla.icompras.pedidos.controller.dto;
 
-public record ItemPedidoDTO() {
+import java.math.BigDecimal;
+
+public record ItemPedidoDTO(Long codigoPedido, Integer quantidade, BigDecimal valorUnitario) {
 }
